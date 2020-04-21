@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	width: 1920px;
+	font-family: "微軟正黑體";
+	font-weight: bold;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family:"Andale Mono";
+	src:url(../asset/AndaleMono.ttf);
+
+}
+
+@font-face {
+	font-family: "蘋方-繁 Medium";
+	src:url(../asset/PingFang/PingFang-TC-Regular.otf);
+}
+
+@font-face {
+	font-family: "蘋方-繁 Light";
+	src:url(../asset/PingFang/PingFang-TC-Thin.otf);
+}
+
+@font-face {
+	font-family: "Roboto";
+	src:url(../asset/Roboto/Roboto-Medium.ttf);
+}
+
+.wrap{
+	margin: 0 auto;
+	padding-left: 360px;
+	width: 1920px;
+}
+
+h1{
+	width: 1200px;
+	margin: 48px 0;
+	padding-bottom: 24px;
+	border-bottom: 2px solid black;
+
+	font-family:"Andale Mono";
+	font-size:80px;
+	line-height: 90px;
+	text-align: left;
+    color: #000000;
+
+}
+
+.photo{
+	margin-bottom: 48px;
+	display: block;
+}
+
+h2,h3{
+	margin-bottom: 8px;
+	font-family: "蘋方-繁 Medium";
+	font-size: 32px;
+	line-height: 45px;
+	text-align: left;
+	color: #000000;
+
+}
+
+h2 span{
+	margin-left: 16px;
+
+	font-family: "Roboto";
+	font-size: 24px;
+	line-height: 32px;
+	text-align: left;
+	color: #A00404;
+}
+
+h2.whiteColorFont,.whiteColorFont span{
+	color: white;
+	text-align: center;
+}
+
+
+
+ul{
+	width: 1200px;
+	border-top: 1px solid black;
+	padding-top: 16px;
+	margin-bottom: 72px;
+}
+
+ul.profile li{
+	margin-bottom: 24px;
+}
+
+ul.education{
+	position: relative;
+}
+ul.education li{
+	margin-bottom: 32px;
+}
+
+.circle{
+	width: 16px;
+	height: 16px;
+	margin: 10px 16px;
+	border-radius:8px;
+	background: #96A9C4;
+	float: left;
+}
+
+
+
+li, p{
+	font-family: "蘋方-繁 Light";
+	font-size: 24px;
+	line-height: 36px;
+	text-indent: 48px;
+	text-align: left;
+	color: #000000;
+	letter-spacing: 0.8px;
+
+}
+
+ul.skills li,
+div.circle+p,
+ul.workExperience p{
+	text-indent: 0;
+}
+
+.educationTimeLine:after{
+	content: "";
+	position: absolute;
+	top:34px;
+	left: 23.5px;
+	width: 0;
+	height: 68px;
+	border-right: 1px solid #96A9C4;
+}
+
+div.darkblueBackground,
+ul.contactMethod{
+  width: 1200px;
+	background: #415165;
+	padding: 24px 102px 56px 102px;
+	margin-bottom: 72px;
+	position: relative;
+}
+
+ul.contactMethod{
+	margin-bottom: 0;
+	border-top: 0;
+}
+
+div.darkblueBackground:after{
+	content:"";
+	width: 100vw;
+	height: 360px;
+	background: #96A9C4;
+	position: absolute;
+	top: 81px;
+	left: -360px;
+	z-index: -1;
+}
+
+ul.skills{
+ width: 996px;
+ border-top: 1px solid white;
+ padding-top: 40px;
+ margin-bottom: 0;
+}
+
+div.skillsContainer{
+	margin-left: 387px;
+	border-left: 1px solid #96A9C4;
+	padding-left: 24px;
+}
+ul.skills li{
+	text-align: left;
+	margin-bottom: 16px;
+
+	color: white;
+}
+
+ul.skills li:last-child{
+	margin-bottom: 0;
+}
+
+ul.workExperience{
+	padding-top: 22px;
+	position: relative;
+}
+ul.workExperience li:before{
+	content: "";
+	width: 0px;
+	height: 97%;
+	border-left: 1px solid #96A9C4;
+	position: absolute;
+	top: 22px;
+	left: 24px;
+}
+
+ul.workExperience li{
+	margin-left: 48px;
+	margin-bottom: 32px;
+	text-indent: 0;
+}
+
+ul.workExperience li:last-child{
+	margin-bottom: 0;
+}
+
+ul.workExperience h3 {
+	font-size: 24px;
+	line-height: 32px;
+}
+
+ul.workExperience img{
+	margin-bottom: 8px;
+	display: block;
+}
+
+ul.workExperience p{
+	width: 642px;
+	font-size:20px;
+	line-height: 30px;
+}
+
+ul.contactMethod:before{
+	content: "";
+	width: 100vw;
+	height: 100%;
+	background: #415165;
+	position: absolute;
+	top: 0px;
+	left: -360px;
+	z-index:-1;
+
+}
+
+ul.contactMethod:after{
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: white;
+	position: absolute;
+	top: 77px;
+	left: 0;
+	z-index:1;
+
+}
+ul.contactMethod h2{
+	margin-bottom: 40px;
+}
+
+ul.contactMethod{
+	padding-bottom: 48px;
+}
+
+ul.contactMethod li{
+	margin-bottom: 16px;
+	text-align: center;
+	color: white;
+
+}
+
+ul.contactMethod li:last-child{
+	margin-bottom: 0;
+}
+
+li.contactHyperlink {
+	width: 192px;
+	height: 48px;
+
+	display: block;
+	margin: 0 auto;
+}
+
+li.contactHyperlink img{
+	float: left;
+	padding-right: 24px;
+}
+
+li.contactHyperlink img[alt="line"]{
+	padding-right: 0;
+}
